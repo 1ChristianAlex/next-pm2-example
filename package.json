@@ -6,10 +6,13 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "pm2": "pm2",
+    "pm2-start": "yarn pm2 save --force && yarn pm2-runtime ./ecosystem.config.js"
   },
   "dependencies": {
     "next": "12.2.0",
+    "pm2": "^5.2.0",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
